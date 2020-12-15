@@ -1,8 +1,11 @@
 <?php
 
+use App\SessionsRepository;
+use App\TransactionsRepository;
+
 return [
     'sources' => [
-        Sessions::class => SessionRepository::class,
+        Sessions::class => SessionsRepository::class,
         Transactions::class => TransactionsRepository::class // to expand the example
     ]
 ];

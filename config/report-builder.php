@@ -1,6 +1,8 @@
 <?php
 
+use App\Sessions;
 use App\SessionsRepository;
+use App\Transactions;
 use App\TransactionsRepository;
 
 return [

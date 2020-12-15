@@ -24,6 +24,7 @@ class ReportBuilderProvider extends ServiceProvider
 
         foreach ($types as $type => $repo) {
             $this->app->bind($type, function () use ($repo){
+                $repo = $this->app->make($repo);
                 return new ReportBuilder($repo);
             });
         }

@@ -7,15 +7,15 @@ namespace App;
 class ReportBuilder
 {
     /**
-     * @var
+     * @var ReportRepositoryInterface
      */
     private $repository;
 
     /**
      * ReportBuilder constructor.
-     * @param $repository
+     * @param ReportRepositoryInterface $repository
      */
-    public function __construct($repository)
+    public function __construct(ReportRepositoryInterface $repository)
     {
         $this->repository = $repository;
     }
